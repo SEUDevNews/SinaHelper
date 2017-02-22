@@ -103,7 +103,6 @@ class WeiboHelper(object):
         self.client.set_access_token(access_token, expires_in)
         self.client.statuses.update.post(status=status)
 
-
     def make_post(self, status, pic):
         access_token, expires_in = self.get_token_expire()
         self.client.set_access_token(access_token, expires_in)
